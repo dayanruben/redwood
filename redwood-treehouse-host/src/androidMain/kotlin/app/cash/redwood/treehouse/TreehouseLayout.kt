@@ -32,6 +32,8 @@ public open class TreehouseLayout(
   context: Context,
   override val widgetSystem: WidgetSystem<View>,
   androidOnBackPressedDispatcher: AndroidOnBackPressedDispatcher,
+  override val dynamicContentWidgetFactory: DynamicContentWidgetFactory<View> =
+    EmptyDynamicContentWidgetFactory(context),
 ) : RedwoodLayout(context, androidOnBackPressedDispatcher),
   TreehouseView<View> {
   override var readyForContentChangeListener: ReadyForContentChangeListener<View>? = null
