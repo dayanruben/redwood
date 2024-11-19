@@ -1,7 +1,20 @@
 # Change Log
 
 ## [Unreleased]
-[Unreleased]: https://github.com/cashapp/redwood/compare/0.15.0...HEAD
+[Unreleased]: https://github.com/cashapp/redwood/compare/0.16.0...HEAD
+
+New:
+- Nothing yet!
+
+Changed:
+- Nothing yet!
+
+Fixed:
+- Nothing yet!
+
+
+## [0.16.0] - 2024-11-19
+[0.16.0]: https://github.com/cashapp/redwood/releases/tag/0.16.0
 
 New:
 - Redwood publishes what's happening in bound content through the new `Content.State` type.
