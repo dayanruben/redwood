@@ -41,6 +41,7 @@ import app.cash.redwood.treehouse.TreehouseView.WidgetSystem
 import app.cash.redwood.treehouse.bindWhenReady
 import app.cash.redwood.ui.Density
 import app.cash.redwood.ui.LayoutDirection as RedwoodLayoutDirection
+import app.cash.redwood.ui.Margin
 import app.cash.redwood.ui.OnBackPressedDispatcher
 import app.cash.redwood.ui.Size
 import app.cash.redwood.ui.UiConfiguration
@@ -65,6 +66,7 @@ public fun <A : AppService> TreehouseContent(
   val uiConfiguration = UiConfiguration(
     darkMode = isSystemInDarkTheme(),
     safeAreaInsets = safeAreaInsets(),
+    viewInsets = Margin.Zero,
     viewportSize = viewportSize,
     density = density.density.toDouble(),
     layoutDirection = when (LocalLayoutDirection.current) {
