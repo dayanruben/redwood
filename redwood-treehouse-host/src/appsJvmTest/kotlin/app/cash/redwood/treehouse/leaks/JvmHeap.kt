@@ -18,6 +18,7 @@ package app.cash.redwood.treehouse.leaks
 import androidx.collection.IntObjectMap
 import androidx.collection.ScatterSet
 import app.cash.redwood.treehouse.EventLog
+import com.example.redwood.testapp.treehouse.HostApi
 import java.lang.ref.WeakReference
 import java.lang.reflect.Field
 import kotlinx.coroutines.CoroutineDispatcher
@@ -83,6 +84,7 @@ internal object JvmHeap : Heap {
       instance is CoroutineDispatcher -> listOf()
       instance is Enum<*> -> listOf()
       instance is EventLog -> listOf()
+      instance is HostApi -> listOf()
       instance is Int -> listOf()
       instance is Job -> listOf()
       instance is Json -> listOf()
